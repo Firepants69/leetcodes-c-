@@ -2,10 +2,7 @@
 {
     static void Main(string[] args)
     {
-
-        string s = "abcabcbb";
-        Console.Write(LengthOfLongestSubstring(s));
-
+        Console.WriteLine(LengthOfLongestSubstring("abcabcbb"));
 
     }
 
@@ -14,24 +11,18 @@
         if (s.Length == 1) return 1;
 
         int maxLengthSubstring = 0;
-        int begin = 0;
+        int left = 0;
         HashSet<char> originalKeys = new HashSet<char>();
-
-        for (int end = 0; end < s.Length; end++)
+        for (int right = 0; right < s.Length; right++)
         {
-            if (originalKeys.Contains(s[end]))
+            while (originalKeys.Contains(s[right]))
             {
-                begin = end;
+                originalKeys.Remove(s[left++]);
+                Console.WriteLine("se ejecuto esto");
             }
-            originalKeys.Add(s[end]);
-
-            if (end - begin > maxLengthSubstring)
-            {
-                maxLengthSubstring = end - begin;
-            }
-            Console.WriteLine(end);
+            originalKeys.Add(s[right]);
+            maxLengthSubstring = Math.Max(maxLengthSubstring, originalKeys.Count);
         }
-        Console.WriteLine(begin);
         return maxLengthSubstring;
     }
 }

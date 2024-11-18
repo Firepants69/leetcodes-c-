@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes\\leetcodes.csproj",
+      "projectUniqueName": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
       "projectName": "leetcodes",
-      "projectPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes\\leetcodes.csproj",
+      "projectPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
       "packagesPath": "C:\\Users\\humer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes\\obj\\",
+      "outputPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\humer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.110/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
