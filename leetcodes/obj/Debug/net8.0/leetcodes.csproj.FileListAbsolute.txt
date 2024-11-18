@@ -1,0 +1,14 @@
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\bin\Debug\net8.0\leetcodes.exe
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\bin\Debug\net8.0\leetcodes.deps.json
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\bin\Debug\net8.0\leetcodes.runtimeconfig.json
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\bin\Debug\net8.0\leetcodes.dll
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\bin\Debug\net8.0\leetcodes.pdb
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.AssemblyInfoInputs.cache
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.AssemblyInfo.cs
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.csproj.CoreCompileInputs.cache
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.dll
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\refint\leetcodes.dll
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.pdb
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\leetcodes.genruntimeconfig.cache
+C:\Users\humer\OneDrive\Escritorio\proyectos\leetcodes\obj\Debug\net8.0\ref\leetcodes.dll
