@@ -2,27 +2,37 @@
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(LengthOfLongestSubstring("abcabcbb"));
-
+        LongestPalindrome("bb");
     }
 
-    public static int LengthOfLongestSubstring(string s)
-    {
-        if (s.Length == 1) return 1;
-
-        int maxLengthSubstring = 0;
-        int left = 0;
-        HashSet<char> originalKeys = new HashSet<char>();
-        for (int right = 0; right < s.Length; right++)
-        {
-            while (originalKeys.Contains(s[right]))
-            {
-                originalKeys.Remove(s[left++]);
-                Console.WriteLine("se ejecuto esto");
+    // substring mas grande que sea un palindromo
+    //Input: s = "babad"
+    // Output: "bab"
+    // Explanation: "aba" is also a valid answer.
+    private static bool isPalindrome(string palindrome){
+        bool isPalindrome = false;
+        int j = palindrome.Length-1;
+        for(int i = 0; i < palindrome.Length;i++){
+            isPalindrome = palindrome[i] == palindrome[j];
+            if(!isPalindrome){
+                return isPalindrome;
             }
-            originalKeys.Add(s[right]);
-            maxLengthSubstring = Math.Max(maxLengthSubstring, originalKeys.Count);
+            j--;            
         }
-        return maxLengthSubstring;
+        return isPalindrome;
+    }
+    public static string LongestPalindrome(string s) {
+        if(s.Length == 1) return s;
+
+        string maxPalindromic = "";
+
+        for(int i = 0; i< s.Length; i++){
+            for(int j = i+1; j < s.Length+1;j++){
+                string substring = s.Substring(i,j-i);
+                Console.WriteLine(substring);
+                // maxPalindromic = isPalindrome(substring) && maxPalindromic.Length < substring.Length? substring:maxPalindromic;     
+            }            
+        }
+        return maxPalindromic;
     }
 }

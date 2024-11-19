@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\humer\\.nuget\\packages\\": {}
+    "C:\\Users\\zS22017030\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
+      "projectUniqueName": "C:\\Users\\zS22017030\\Desktop\\xd\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
       "projectName": "leetcodes",
-      "projectPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
-      "packagesPath": "C:\\Users\\humer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\humer\\OneDrive\\Escritorio\\proyectos\\leetcodes-c-\\leetcodes\\obj\\",
+      "projectPath": "C:\\Users\\zS22017030\\Desktop\\xd\\leetcodes-c-\\leetcodes\\leetcodes.csproj",
+      "packagesPath": "C:\\Users\\zS22017030\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zS22017030\\Desktop\\xd\\leetcodes-c-\\leetcodes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\humer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\zS22017030\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
