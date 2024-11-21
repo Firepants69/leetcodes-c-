@@ -2,37 +2,46 @@
 {
     static void Main(string[] args)
     {
-        LongestPalindrome("bb");
+        Console.WriteLine(Convert("PAYPALISHIRING",3));
     }
+// P   A   H   N
+// A P L S I I G
+// Y   I   R
+// And then read line by line: "PAHNAPLSIIGYIR"
 
-    // substring mas grande que sea un palindromo
-    //Input: s = "babad"
-    // Output: "bab"
-    // Explanation: "aba" is also a valid answer.
-    private static bool isPalindrome(string palindrome){
-        bool isPalindrome = false;
-        int j = palindrome.Length-1;
-        for(int i = 0; i < palindrome.Length;i++){
-            isPalindrome = palindrome[i] == palindrome[j];
-            if(!isPalindrome){
-                return isPalindrome;
+// Write the code that will take a string and make this conversion given a number of rows:
+
+// string convert(string s, int numRows);
+ 
+
+// Example 1:
+
+// Input: s = "PAYPALISHIRING", numRows = 3
+// Output: "PAHNAPLSIIGYIR"
+    public static string Convert(string s, int numRows) {
+        if(numRows ==1) return s;
+
+        string result = "";
+        
+        string [] mat = new string[numRows];
+        int i =0;
+        int d =1;
+
+        foreach(char c in s){
+            mat[i] += c;
+            if (i == 0){
+                d = 1;
+            }else if(i == numRows-1){
+                d = -1;
             }
-            j--;            
+            i += d;
         }
-        return isPalindrome;
-    }
-    public static string LongestPalindrome(string s) {
-        if(s.Length == 1) return s;
-
-        string maxPalindromic = "";
-
-        for(int i = 0; i< s.Length; i++){
-            for(int j = i+1; j < s.Length+1;j++){
-                string substring = s.Substring(i,j-i);
-                Console.WriteLine(substring);
-                // maxPalindromic = isPalindrome(substring) && maxPalindromic.Length < substring.Length? substring:maxPalindromic;     
-            }            
+        for(int j = 0;j<mat.Length;j++){
+            result+= mat[j];
         }
-        return maxPalindromic;
+       
+        
+        return result;        
     }
+   
 }
