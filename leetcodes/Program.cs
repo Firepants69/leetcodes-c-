@@ -2,7 +2,7 @@
 {
     static void Main(string[] args)
     {
-        Console.WriteLine(Convert("PAYPALISHIRING",3));
+        Console.WriteLine(Reverse(200));
     }
 // P   A   H   N
 // A P L S I I G
@@ -18,30 +18,28 @@
 
 // Input: s = "PAYPALISHIRING", numRows = 3
 // Output: "PAHNAPLSIIGYIR"
-    public static string Convert(string s, int numRows) {
-        if(numRows ==1) return s;
+    public static int Reverse(int x) {
+        try
+        {
+        string xString = x.ToString();
+        string rString = "";
+        bool isNegative = false;
 
-        string result = "";
-        
-        string [] mat = new string[numRows];
-        int i =0;
-        int d =1;
-
-        foreach(char c in s){
-            mat[i] += c;
-            if (i == 0){
-                d = 1;
-            }else if(i == numRows-1){
-                d = -1;
+        for(int i =xString.Length-1;i>=0;i--){
+            if(xString[i] != '-'){
+                rString+=xString[i];
+            }else{
+                isNegative = true;
             }
-            i += d;
+        }       
+        return isNegative ? Int32.Parse(rString)* (-1):Int32.Parse(rString);
+    
         }
-        for(int j = 0;j<mat.Length;j++){
-            result+= mat[j];
+        catch (System.OverflowException)
+        {
+            return 0;
         }
-       
         
-        return result;        
     }
    
 }
