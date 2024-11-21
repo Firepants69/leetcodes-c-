@@ -25,3 +25,7 @@ public class ZigzagConversion{
         return result;        
     }
 }
+
+// d es lo que le indica subir o bajar a niveles en el arreglo de strings
+// cuando llega a i a valer lo mismo que el numsRows-1 sube osea d = -1
+// cuando llega a i a valer 0 baja osea d = 1
